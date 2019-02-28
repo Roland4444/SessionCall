@@ -1,0 +1,15 @@
+/home/roland/Documents/gnatprojs/session/src/caller.c: In function ‘main’:
+/home/roland/Documents/gnatprojs/session/src/caller.c:6:19: warning: implicit declaration of function ‘dlopen’; did you mean ‘popen’? [-Wimplicit-function-declaration]
+   void * handle = dlopen("obj/libl.so");
+                   ^~~~~~
+                   popen
+/home/roland/Documents/gnatprojs/session/src/caller.c:6:19: warning: initialization of ‘void *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+/home/roland/Documents/gnatprojs/session/src/caller.c:10:7: warning: ‘return’ with no value, in function returning non-void
+       return;
+       ^~~~~~
+/home/roland/Documents/gnatprojs/session/src/caller.c:4:5: note: declared here
+ int main()
+     ^~~~
+/home/roland/Documents/gnatprojs/session/src/caller.c:13:29: error: expected statement before ‘)’ token
+   printf("load sucessfull");)
+                             ^
