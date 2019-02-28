@@ -1,28 +1,22 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-typedef struct {
-  void (*func)(void);
-} Class;
-
-Class* ptr;
+#include "def.h"
 
 void func_(){
   printf("\n\n\nCalled succesfull!\n\n");
 }
-void  init(){
-  ptr = (Class*)malloc(sizeof(Class));
+Class*  init(){
+  Class* ptr = (Class*)malloc(sizeof(Class));
   ptr -> func = func_;
+  return ptr;
 }
 
-void call()
+void call(Class* ptr)
 {
   ptr->func();
 }
-int main(void) {
-  init();
-  call();
 
+int main(void) {
+  call(init());
+  call(NULL);
 }
 
 
