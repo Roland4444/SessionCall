@@ -12,3 +12,5 @@ typedef struct {
 
 typedef void (*load__)(Class*);
 typedef Class* (*init__)(void);
+typedef void (*void__)(void);
+

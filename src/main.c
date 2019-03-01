@@ -1,6 +1,6 @@
 #include "def.h"
 
-int i=0;
+int i;
 
 void get_i()
 {
