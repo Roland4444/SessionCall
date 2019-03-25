@@ -1,8 +1,8 @@
 
 #include "def.h"
 int main (int argc, char **argv) {
-  
-  void * handle = dlopen("libnosess.so", RTLD_LAZY);
+  printf("WORKING ON LOADER PROGRAMM!\n\n");
+  void * handle = dlopen("./obj/libnosess.so", RTLD_LAZY);
   if (!handle)
     {
       printf("\n\nERROR!\n\n");
